@@ -1,5 +1,14 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+a, a:visited, a:active{
+    text-decoration: none;
+    color: #5794bd;
+}
+
+a:hover{
+    color: #48ad34;
+    cursor: pointer;
+}
 *{
     margin: 0;
     padding: 0;
@@ -124,6 +133,42 @@ body{
         margin: 0px 0 25px 0;
         background: green;
     }
+    #single-page-item{
+        width: 90%;
+        max-width: 500px;
+        min-height: 100vh;
+        max-height: 100vh;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40vh;
+        position: absolute;
+        overflow: scroll;
+        border-radius: 10% 10% 0 0;
+        background: #fafafa;
+        z-index: 3;
+        animation: appearNewAba .3s linear;
+    }
+    #single-page-item section{
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 15px 0 15px 0;
+    }
+    #single-page-item section h2{
+        font-size: 20px;
+        color: #222;
+    }
+    #single-page-item section p{
+        font-size: 15px;
+        color: #222;
+        margin: 15px 0 10px 0;
+    }
+    #single-page-item section span{
+        font-size: 10px;
+    }
     section#single-page-contato{
         width: 90%;
         max-width: 500px;
@@ -148,14 +193,14 @@ body{
             max-width: 500px;
         }
     }
-    section#single-page-contato .single-item-top{
+    section#single-page-contato .single-item-top, #single-page-item .single-item-top{
         width: 90%;
         height: auto;
         margin-top: 50px;
         animation: appearItem .7s;
     }
 
-    section#single-page-contato .single-item-top span{
+    section#single-page-contato .single-item-top span, #single-page-item .single-item-top span{
         width: 85px;
         display: flex;
         align-items: center;
@@ -163,8 +208,9 @@ body{
         flex-direction: row;
         text-transform: uppercase;
         font-weight: bolder;
+        cursor: pointer;
     }
-    section#single-page-contato .single-item-top span img{
+    section#single-page-contato .single-item-top span img, #single-page-item .single-item-top span img{
         width: 1.1rem;
     }
     section#single-page-contato form{
