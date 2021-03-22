@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
-    <title>Document</title>
+    <title>Pagina pessoal</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./www/mainstyle.css">
+    <link rel="icon" href="./imagem/codingItem.png" type="image/png" sizes="32x32">
 </head>
 <body>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -47,18 +48,52 @@
                 <h2>Automatização de cardapio</h2>
                 <p>Descrição projeto</p>
             </section>
-            <button>💻 &nbsp; Minhas criações & participações;&nbsp;</button>
+            <button onclick="AbrirPageItem()">💻 &nbsp; Minhas criações & participações;&nbsp;</button>
             <button onclick="AbrirPage()">Entrar em contato;</button>
         </main>
+        <div id="single-page-item">
+            <div class="single-item-top">
+                <span onclick="AbrirPageItem()"><img src="./imagem/seta.png">Voltar</span>
+            </div>
+            <section>
+                <p>Conhecimento em desenvolvimento web, HTML5, CSS3, JavaScript, Node, Firebase, Wordpress, e em usar a ferramente Construct para fazer <s>joguinhos</s> e APPs</p>
+                <span style="font-size: 8px; align-self: center;"><s>desenvolvedor front-end estudando para aprender back-end</s><br>js != java </span>
+            </section>
+            <section class="item-bloco">
+                <h2>Angorá Biquínis</h2>
+                <p>E-commerce - Construio com a tecnologia WordPress, meu papel foi organizar o layout apartir dos templates que foi passado.</p>
+                <span><a href="https://biquinisdoverao.com.br/"  target="blank" rel="noopener noreferrer">biquinisdoverao.com.br</a><br>o site irá para o domínio original em breve</span>
+            </section>
+            <section class="item-bloco">
+                <h2>Terra Nova Agrícola</h2>
+                <p>Sendo construído com as tecnologias HTML5, CSS3, JS e Firebase; meu papel esta sendo montar o layout com os templates que é passado e adicionar informações.</p>
+                <span><a href="http://terranovaagricola.com.br/"  target="blank" rel="noopener noreferrer">terranovaagricola.com.br</a><br>site em construção</span>
+            </section>
+            <section class="item-bloco">
+                <h2>Woods Wine</h2>
+                <p>E-commerce - Usando a tecnologis WordPress, meu papel esta sendo montar o layout com os templates que é passado, dar vida com animações em css!</p>
+                <span><a href="https://woodswine.com.br/"  target="blank" rel="noopener noreferrer">woodswine.com.br</a><br>site em construção</span>
+            </section>
+            <section class="item-bloco">
+                <h2>3A portas</h2>
+                <p>Apenas apontado e hospedado</p>
+                <span><a href="https://3aportas.com.br/"  target="blank" rel="noopener noreferrer">3aportas.com.br</a><br>site em construção</span>
+            </section>
+            <section class="item-bloco">
+                <h2>Willian Ribeiro Joias</h2>
+                <p>E-commerce - Tecnologia WordPress</p>
+                <span><a href="https://willianribeirojoias.com.br/"  target="blank" rel="noopener noreferrer">willianribeirojoias.com.br</a><br>site em construção</span>
+            </section>
+        </div>
         <section id="single-page-contato">
             <div class="single-item-top">
                 <span onclick="AbrirPage()"><img src="./imagem/seta.png">Voltar</span>
             </div>
             <form autocomplete="off">
-                <input id="NameTake" type="text" placeholder="Nome*">
-                <input id="EmailTake" type="email" placeholder="E-mail">
-                <input id="TakeAssunto" type="text" placeholder="Assunto*">
-                <textarea id="TakeMensagem" placeholder="Escreva sua mensagem" cols="30" rows="10"></textarea>
+                <input id="NameTake" type="text" placeholder="Nome*" autocomplete="off">
+                <input id="EmailTake" type="email" placeholder="E-mail" autocomplete="off">
+                <input id="TakeAssunto" type="text" placeholder="Assunto*" autocomplete="off">
+                <textarea id="TakeMensagem" placeholder="Escreva sua mensagem" cols="30" rows="10" autocomplete="off"></textarea>
             </form>
             <button id="EnviarCompleto">Enviar</button>
             <!--<span id="email-enviado"></span>-->
