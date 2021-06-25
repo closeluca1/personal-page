@@ -1,17 +1,16 @@
-function AbrirPage(){
-    let x = document.getElementById("single-page-contato");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
+function menuOpen() {
+    let x = document.getElementById("menu-item");
+    if (x.style.height == "100px") {
+      x.style.height = "50px";
+      document.getElementById("area-me").style.marginTop = "0";
+      document.getElementById("myName").style.color = "#222";
+      document.getElementById("social").style.display = "none";
     } else {
-      x.style.display = "flex";
-    };
-};
-
-function AbrirPageItem(){
-  let x = document.getElementById("single-page-item");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  };
-};
+      x.style.height = "100px";
+      x.style.justifyContent = "initial";
+      document.getElementById("area-me").style.marginTop = ".5rem";
+      document.getElementById("myName").style.color = "#fff";
+      document.getElementById("social").style.display = "flex";
+      
+    }
+}
