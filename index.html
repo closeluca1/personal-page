@@ -1,133 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
-    <title>Página Pessoal</title>
+    <title>Patrick Lucas</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página pessoal de Patrick (_lucawww) Desenvolvedor WEB">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="PLM ig _lucawww">
-    <link rel="stylesheet" href="./www/mainstyle.css">
-    <link rel="icon" href="./imagem/codingItem.png" type="image/png" sizes="32x32">
+    <meta name="author" content="Patrick Lucas (ig: _lucawww)">
+    <link rel="icon" href="" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="./scripts/mainstyle.css">
+    
 </head>
 <body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-
     <div class="container">
-        <header>
-            <div class="pic-me">
-                <figure>
-                    <img class="pc-icon" src="./imagem/codingItem.png" alt="">
-                </figure>
-                <figure>
-                    <img src="./imagem/lucawww.jpg" alt="@_lucawww">
-                </figure>
+        <header id="menu-item">
+            <section id="area-me">
+                <h1 id="myName">Patrick</h1>
+                <img src="imagens/menu_icon.png" onclick="menuOpen()">
+            </section>
+            <div id="social">
+                <a href="https://br.linkedin.com/in/patrick-lucas-martins-77b8831b7" target="blank" rel="noopener noreferrer"><img src="./imagens/in_icon.png"></a>
+                <a href="https://www.youtube.com/channel/UCHOI2_iXzt5X3nzqVTLDv6g"><img src="./imagens/yt_icon.png" target="blank" rel="noopener noreferrer"></a>
+                <a href="https://github.com/closeluca1" target="blank" rel="noopener noreferrer"><img src="./imagens/git_icon.png"></a>
             </div>
-            <h1 class="my-name-is" alt="ig _lucawww">Patrick</h1>
         </header>
         <main>
-            <div class="top-item">
-                <a href="https://github.com/closeluca1" target="blank" rel="noopener noreferrer"><div class="icon-space">
-                    <img src="./imagem/githubIcon.png">
-                </div></a>
-                <a href="https://www.instagram.com/_lucawww/" target="blank" rel="noopener noreferrer"><div class="icon-space">
-                    <img style="width: 85%" src="./imagem/instagramIcon.png">
-                </div></a>
-                <a href="https://www.youtube.com/channel/UCHOI2_iXzt5X3nzqVTLDv6g" target="blank" rel="noopener noreferrer"><div class="icon-space">
-                    <img style="width: 70%" src="./imagem/youtubeIncon.png">
-                </div></a>
-            </div>
-                <span class="span-title">Projeto &nbsp;👇🏼</span>
-            <section class="about-something">
-                <h2>Automatização de cardapio</h2>
-                <p>Descrição projeto</p>
-            </section>
-            <button onclick="AbrirPageItem()">💻 &nbsp; Minhas criações & participações;&nbsp;</button>
-<!--             <button onclick="AbrirPage()">Entrar em contato;</button> -->
+            <h6>em construção</h6>
+
+            <!-- <section>
+                    <h3>Desenvolvedor Web</h3>
+                    <p>Experiência em desenvolvimento web, hoje em dia além de trabalhar nesta área estou também estudando programação Backend.</p>
+                <a href="https://api.whatsapp.com/send?phone=5527996374933&text=Ol%C3%A1%20Patrick" target="blank" rel="noopener noreferrer"><button>Contate-me <img src="./imagens/contato_icon.png"></button></a>
+            </section> -->
         </main>
-        <div id="single-page-item">
-            <div class="single-item-top">
-                <span onclick="AbrirPageItem()"><img src="./imagem/seta.png">Voltar</span>
-            </div>
-            <section>
-                <p>Conhecimento em desenvolvimento web, HTML5, CSS3, JavaScript, Node, Firebase, Wordpress, e em usar a ferramenta Construct para fazer <s>joguinhos</s> e APPs</p>
-                <span style="font-size: 8px; align-self: center;"><s>desenvolvedor front-end estudando para aprender back-end</s><br></span>
-                <span style="font-size: 8px; align-self: center;">js != java </span>
-            </section>
-            <section class="item-bloco">
-                <h2>css tutorial</h2>
-                <p>Banco digital</p>
-                <span><a href="https://jae.com.br/"  target="blank" rel="noopener noreferrer">jae.com.br</a><br>Banco digital.</span>
-            </section>
-            <section class="item-bloco">
-                <h2>css tutorial</h2>
-                <p>Criado com o propósito de ser um hobbie e quem sabe ajudar alguém na caminhada do web developer. tecnologias: HTML, CSS, JavaScript, Firebase e SEO.</p>
-                <span><a href="https://csstutorial.com.br/"  target="blank" rel="noopener noreferrer">csstutorial.com.br</a><br>Site sendo alimentado semanalmente.</span>
-            </section>
-            <section class="item-bloco">
-                <h2>Angorá Biquínis</h2>
-                <p>E-commerce - Construido com a tecnologia WordPress, meu papel foi organizar o layout apartir dos templates que foi passado.</p>
-                <span><a href="https://biquinisdoverao.com.br/"  target="blank" rel="noopener noreferrer">biquinisdoverao.com.br</a><br>o site irá para o domínio original em breve</span>
-            </section>
-            <section class="item-bloco">
-                <h2>Terra Nova Agrícola</h2>
-                <p>Sendo construído com as tecnologias HTML5, CSS3, JS e Firebase; meu papel esta sendo montar o layout com os templates que é passado e adicionar informações.</p>
-                <span><a href="http://terranovaagricola.com.br/"  target="blank" rel="noopener noreferrer">terranovaagricola.com.br</a><br>site em construção</span>
-            </section>
-            <section class="item-bloco">
-                <h2>Woods Wine</h2>
-                <p>E-commerce - Usando a tecnologis WordPress, meu papel esta sendo montar o layout com os templates que é passado, dar vida com animações em css!</p>
-                <span><a href="https://woodswine.com.br/"  target="blank" rel="noopener noreferrer">woodswine.com.br</a><br>site em construção</span>
-            </section>
-            <section class="item-bloco">
-                <h2>3A portas</h2>
-                <p>Apenas apontado e hospedado</p>
-                <span><a href="https://3aportas.com.br/"  target="blank" rel="noopener noreferrer">3aportas.com.br</a><br>site em construção</span>
-            </section>
-            <section class="item-bloco">
-                <h2>Willian Ribeiro Joias</h2>
-                <p>E-commerce - Tecnologia WordPress</p>
-                <span><a href="https://willianribeirojoias.com.br/"  target="blank" rel="noopener noreferrer">willianribeirojoias.com.br</a><br>site em construção</span>
-            </section>
-            <section class="item-bloco">
-                <h2>Sr Mustache</h2>
-                <p>HTML5, CSS3, Firebase; Site sendo refatorado</p>
-                <span><a href="https://mustacheexemplo.web.app/"  target="blank" rel="noopener noreferrer">mustacheexemplo.web.app/</a></span>
-            </section>
-            <section class="item-bloco">
-                <h2>Folha Moxuara Online</h2>
-                <p>Jornal online, construido para campanha de 2020, HTML5, CSS3 e JavaScript, SEO e Api do facebook.</p>
-                <span><a href="https://www.folhamoxuaraonline.com.br/"  target="blank" rel="noopener noreferrer">www.folhamoxuaraonline.com.br</a></span>
-            </section>
-        </div>
-        <section id="single-page-contato">
-            <div class="single-item-top">
-                <span onclick="AbrirPage()"><img src="./imagem/seta.png">Voltar</span>
-            </div>
-            <form autocomplete="off">
-                <input id="NameTake" type="text" placeholder="Nome*" autocomplete="off">
-                <input id="EmailTake" type="email" placeholder="E-mail" autocomplete="off">
-                <input id="TakeAssunto" type="text" placeholder="Assunto*" autocomplete="off">
-                <textarea id="TakeMensagem" placeholder="Escreva sua mensagem" cols="30" rows="10" autocomplete="off"></textarea>
-            </form>
-            <button id="EnviarCompleto">Enviar</button>
-            <!--<span id="email-enviado"></span>-->
-        </section>
-        <footer>
-            <h6>"o desejo precisa de um certo claustro"</h6>
-        </footer>
     </div>
-    <script src="./www/firebase.js"></script>
-    <script src="./www/gerenciamento.js"></script>
-    <script src="./www/mainscript.js"></script>
+    <script src="./scripts/mainscript.js"></script>
 </body>
 </html>
