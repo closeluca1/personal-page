@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Patrick Lucas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página pessoal de Patrick (_lucawww) Desenvolvedor WEB">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Patrick Lucas (ig: _lucawww)">
+    <link rel="icon" href="" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="./scripts/mainstyle.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header id="menu-item">
+            <section id="area-me">
+                <h1 id="myName">Patrick</h1>
+                <img src="imagens/menu_icon.png" onclick="menuOpen()">
+            </section>
+            <div id="social">
+                <a href="https://br.linkedin.com/in/patrick-lucas-martins-77b8831b7" target="blank" rel="noopener noreferrer"><img src="./imagens/in_icon.png"></a>
+                <a href="https://www.youtube.com/channel/UCHOI2_iXzt5X3nzqVTLDv6g"><img src="./imagens/yt_icon.png" target="blank" rel="noopener noreferrer"></a>
+                <a href="https://github.com/closeluca1" target="blank" rel="noopener noreferrer"><img src="./imagens/git_icon.png"></a>
+            </div>
+        </header>
+        <main>
+            <section class="svgbg">
+                <h2>sou <span>patrick lucas</span>,<br>desenvolvedor web</h2>
+                <img src="imagens/patrick-lucas-2.png">
+            </section>
+            <section class="column-area">
+                <a href="https://api.whatsapp.com/send?phone=5527996374933&text=Ol%C3%A1%20Patrick" target="blank" rel="noopener noreferrer"><button>Contate-me <img src="./imagens/contato_icon.png"></button></a>
+
+
+
+                <div class="double_item">
+                    <div class="item-bloco">
+                        <img src="./imagens/arrow.png">
+                        <h6>web<br>developer</h6>
+                        <span id="webdev" onclick="CloseButton()">ver mais <img src="./imagens/arrow-right.png"></span>
+                    </div>
+                    <div class="item-bloco">
+                        <img src="./imagens/folder-info.png">
+                        <h6>sites<br>programados</h6>
+                        <span id="sites" onclick="CloseButton()">ver mais <img src="./imagens/arrow-right.png"></span>
+                    </div>
+                </div>
+                <div class="double_item">
+                    <div class="item-bloco">
+                        <img src="./imagens/arrow.png">
+                        <h6>serviço<br>prestado</h6>
+                        <span id="servico" onclick="CloseButton()">ver mais <img src="./imagens/arrow-right.png"></span>
+                    </div>
+                </div>
+            </section>
+            <div id="bloco-appear">
+                <span class="closebutton" onclick="CloseButton()">X</span>
+
+                <section>
+                    <h2 id="title"></h2>
+                    <p id="p1"></p>
+                    <p id="p2"></p>
+                    <p id="p3"></p>
+                    <p id="p4"></p>
+                    <p id="p5"></p>
+                    <p id="p6"></p>
+
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="./scripts/mainscript.js"></script>
+    <script>
+        function CloseButton() {
+        var x = document.getElementById("bloco-appear");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+            choosed = "";
+            document.getElementById("title").innerHTML = "";
+            document.getElementById("p1").innerHTML = "";
+            document.getElementById("p2").innerHTML = "";
+            document.getElementById("p3").innerHTML = "";
+            document.getElementById("p5").innerHTML = "";
+            document.getElementById("p6").innerHTML = "";
+        } else {
+            x.style.display = "flex";
+            };
+        };
+
+        let choosed = "";
+
+
+
+        const webdev = document.getElementById("webdev");
+        webdev.addEventListener("click", function(){
+            choosed = "devweb";
+            document.getElementById("title").innerHTML = "área de conhecimento";
+            document.getElementById("p1").innerHTML = "HTML, CSS, JavaScript & SEO";
+            document.getElementById("p2").innerHTML = "nodeJS";
+            document.getElementById("p3").innerHTML = "Firebase";
+            document.getElementById("p5").innerHTML = "Wordpress";
+            document.getElementById("p6").innerHTML = "React Native";
+        });
+        
+        const sites = document.getElementById("sites");
+        sites.addEventListener("click", function(){
+            choosed = "sites";
+            document.getElementById("title").innerHTML = "sites programados";
+            document.getElementById("p1").innerHTML = "angorabiquinis.com.br";
+            document.getElementById("p2").innerHTML = "borana.com.br";
+            document.getElementById("p3").innerHTML = "jae.com.br";
+            document.getElementById("p5").innerHTML = "willianribeirojoias.com.br";
+            document.getElementById("p6").innerHTML = "";
+        });
+        
+        const servico = document.getElementById("servico");
+        servico.addEventListener("click", function(){
+            choosed = "sites";
+            document.getElementById("title").innerHTML = "trabalho";
+            document.getElementById("p1").innerHTML = "Agência Dellossi; &nbsp; <span>07/02/2021 &nbsp; à &nbsp; -</span>";
+            document.getElementById("p2").innerHTML = "";
+            document.getElementById("p3").innerHTML = "";
+            document.getElementById("p5").innerHTML = "";
+            document.getElementById("p6").innerHTML = "";
+        });
+        
+    </script>
+</body>
+</html>

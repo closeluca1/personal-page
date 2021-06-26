@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+a, a:hover, a:active, a:visited{
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    background: #fcfcfc;
+    font-family: 'Ubuntu', sans-serif;
+}
+@media (min-width: 320px){
+    .container{
+        width: 100%;
+        max-width: 720px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        
+    }
+    header{
+        width: 100%;
+        max-width: 720px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        align-self: center;
+        -webkit-box-shadow: 0px -2px 10px 2px #e7e7e7; 
+        box-shadow: 0px -2px 10px 2px #e7e7e7;
+        z-index: 999;
+        transition: height .2s;
+        z-index: 999;
+        background: #fcfcfc;
+    }
+    header section{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header h1{
+        font-size: .95rem;
+        transition: color .1s;
+        
+    }
+    header img{
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    header #social{
+        width: 200px;
+        height: 40px;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 1rem 0 2rem 0;
+    }
+    header #area-me h1{
+        margin: 0;
+    }
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        
+    }
+    main .double_item{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    main .double_item .item{
+        width: 50%;
+        
+    }
+    main .double_item .item h3{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    main section{
+        width: 100%;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        margin: 0 0 2rem 0;
+    }
+    main section.svgbg{
+        min-height: 150px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        background-size:  cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-image: url("../imagens/wave.svg") !important;
+    }
+    main section h2{
+        color: #fff;
+        margin-top: -2rem;
+        font-size: 1.5rem;
+    }
+    main section h2 span{
+        color: #63ff88;
+    }
+    main section.svgbg img{
+        width: 155px;
+        height: auto;
+        position: relative;
+    }
+    main section.column-area{
+        width: 90%;
+        min-height: 50px;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
+    main section a{
+        width: 130px;
+    }
+    main section a button{
+        width: 125px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: .5rem;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        color: #333;
+        background: #63ff88;
+        cursor: pointer;
+    }
+
+    main section a button img{
+        width: 25px;
+        margin-top: -2px;
+    }
+    main .double_item{
+        width: 99%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2rem 0 0 0;
+
+    }
+    main .double_item .item-bloco{
+        width: 45.5%;
+        max-width: 170px;
+        min-width: 140px;
+        height: 200px;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: .5rem;
+        -webkit-box-shadow: 1px 6px 4px -1px #e7e7e7; 
+        box-shadow: 1px 6px 4px -1px #e7e7e7;
+        background: rgb(255, 255, 255);
+    }
+    main .double_item .item-bloco img{
+        width: 20px;
+        height: auto;
+        margin-left: 15%;
+    }
+    main .double_item .item-bloco h6{
+        font-size: .95rem;
+        margin: 1.5rem 0 1rem 15%;
+        color: #333;
+    }
+    main .double_item .item-bloco span{
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 300;
+        margin: .5rem 0 0 15%;
+        color: #333;
+        cursor: pointer;
+        
+    }
+    main .double_item .item-bloco span img{
+        width: 10px;
+        height: 10px;
+        margin-bottom: -.5px;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 1rem 0 0 1rem;
+    color: #333;
+}
+
+
+
+#bloco-appear{
+    width: 320px;
+    height: 300px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 20vh;
+    
+    -webkit-box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5) !important; 
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5) !important;
+    z-index: 999 !important;
+    background: #fff;
+    animation: appearbox .3s;
+}
+@keyframes appearbox{
+    0%{
+        margin-top: 0vh;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 20vh;
+        opacity: 1;
+    }
+}
+#bloco-appear span{
+    width: 90%;
+    margin-top: .5rem;
+    text-align: right;
+}
+#bloco-appear section{
+    width: 90%;
+    min-height: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+#bloco-appear section h2{
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
+    align-self: center;
+    color: #333;
+}
+#bloco-appear section p{
+    font-size: .95rem;
+    margin: .5rem 0 0 1rem;
+    color: #333;
+}
+#bloco-appear section p span{
+    font-size: .8rem;
+    opacity: .7;
+}
