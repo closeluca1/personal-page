@@ -1,8 +1,6 @@
 import styled from 'styled-components';
+import colors from './Colors';
 
-export type colors = {
-  colors: Object;
-}
 
 export const Container = styled.div`
   width: 100%;
@@ -10,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #efefee;
+  background: ${colors.light};
 `;
 
 export const Header = styled.header`
@@ -30,35 +28,50 @@ export const InnerItem = styled.div`
 
 export const Main = styled.main`
   width: 100%;
-  min-height: 90vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  
+  hr {
+    width: clamp(1rem, 10vw, 3.5rem);
+    height: 4px;
+    border: none;
+    margin-top: .5rem;
+    background: ${colors.primary};
+  }
 `;
 
 export const H1 = styled.h1`
   font-size: clamp(1.2rem, 10vw, 3rem);
   font-weight: 500;
   text-aling: center;
-  margin-bottom: 5rem;
-  color: #303030;
+  margin-bottom: 1rem;
+  color: ${colors.dark};
 `;
 
 export const RowSection = styled.section`
-  width: 100%;
+  width: 90%;
   max-width: 1080px;
   display: flex;
   aling-items: center;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
 `;
 
 export const Article = styled.article`
   width: 100%;
-  min-height: 50px;
-  max-width: 350px;
+  height: auto;
+  
   display: flex;
   flex-direction: column;
+  margin-top: 3.5rem;
+
+  @media(min-width: 720px) {
+    width: clamp(340px, 44vw, 520px);
+  }
 `
 
 export const H2 = styled.h2`
@@ -66,11 +79,43 @@ export const H2 = styled.h2`
   font-weight: 500;
   text-aling: center;
   margin-bottom: 1rem;
-  color: #303030;
+  color: ${colors.dark};
 `;
 
 export const P = styled.p`
   font-size: clamp(.9em, 10vw, 1rem);
   font-weight: 400;
-  color: #cac6bb;
+  line-height: 1.5rem;
+  color: ${colors.secondary};
+`;
+
+export const Box = styled.div`
+  width: 470px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 55% 45% 56% 44% / 30% 30% 70% 70%;
+  background: ${colors.primary};
+
+  @media(max-width: 800px) {
+    width: 325px;
+    height: 246px;
+  }
+`;
+
+export const Inner = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+  overflow: hidden;
+  border-radius: 55% 45% 56% 44% / 30% 30% 70% 70%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  height: auto;
 `;

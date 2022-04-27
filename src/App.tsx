@@ -1,39 +1,49 @@
 import React from 'react';
 import * as Styled from './mainstyle';
+import EuLogo from './assets/eucortado.png';
+import Social from './components/social';
+
 
 
 const App = () => {
- return (
-  <Styled.Container>
-    <Styled.Header>
-      <Styled.InnerItem>
-        header
-      </Styled.InnerItem>
-    </Styled.Header>
+  return (
+    <Styled.Container>
+      <Styled.Header>
+        <Styled.InnerItem>
+          ...
+        </Styled.InnerItem>
+      </Styled.Header>
 
-    <Styled.Main>
-      <Styled.H1>Patrick Lucas</Styled.H1>
+      <Styled.Main>
 
-      <Styled.RowSection>
-        
-        <Styled.Article>
+        <Styled.RowSection>
 
-        </Styled.Article>
+          <Styled.Article>
+            <Styled.H1>
+              Patrick Lucas
+              <hr />
+            </Styled.H1>
 
-        <Styled.Article>
+            <Styled.H2>Desenvolvedor front-end</Styled.H2>
+            <Styled.P>Comecei a estudar programação no terceiro trimeste de 2018, e até novembro de 2019 consegui publicar alguns apps e jogos para mobile, o que me ajudou a aprender muito sobre lógica de programação. No começo de 2020 voltei minha atenção para programação web e é onde estou até os dias de hoje.</Styled.P>
 
-        </Styled.Article>
+            <Social/>
 
-        <Styled.Article>
-          <Styled.H2>Desenvolvedor front-end</Styled.H2>
-          <Styled.P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Styled.P>
-        </Styled.Article>
+          </Styled.Article>
 
-      </Styled.RowSection>
-    </Styled.Main>
+          <Styled.Article>
+            <Styled.Box>
+              <Styled.Inner>
+                <Styled.Img src={EuLogo} />
+              </Styled.Inner>
+            </Styled.Box>
+          </Styled.Article>
 
-  </Styled.Container>
- );
+        </Styled.RowSection>
+      </Styled.Main>
+
+    </Styled.Container>
+  );
 }
 
 export default App;
