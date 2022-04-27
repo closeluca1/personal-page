@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/personal-page/static/css/main.b7b3bc90.css",
+    "main.js": "/personal-page/static/js/main.8ea92c91.js",
+    "static/js/787.c0841a6b.chunk.js": "/personal-page/static/js/787.c0841a6b.chunk.js",
+    "static/media/eucortado.png": "/personal-page/static/media/eucortado.0cc46d58179fcd6f0c36.png",
+    "static/media/instagram.svg": "/personal-page/static/media/instagram.3d881e45a3fa0f63e373365f45193c3b.svg",
+    "static/media/github.svg": "/personal-page/static/media/github.6e878b18c3b3a1ab4d014f95a5538f93.svg",
+    "index.html": "/personal-page/index.html",
+    "static/media/linkedin.svg": "/personal-page/static/media/linkedin.d6a07d10733bbf63e7ed036b276556f1.svg",
+    "main.b7b3bc90.css.map": "/personal-page/static/css/main.b7b3bc90.css.map",
+    "main.8ea92c91.js.map": "/personal-page/static/js/main.8ea92c91.js.map",
+    "787.c0841a6b.chunk.js.map": "/personal-page/static/js/787.c0841a6b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7b3bc90.css",
+    "static/js/main.8ea92c91.js"
+  ]
+}
